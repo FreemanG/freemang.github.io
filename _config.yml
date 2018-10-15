@@ -1,0 +1,54 @@
+permalink: /:year/:month/:day/:title/
+
+# Site Info
+title: Freeman's Blog
+tagline: 'I guess that time would judge us all...'
+baseurl: ""
+url: "https://github.com/FreemanG/freemang.github.io"
+
+# Site configurationse
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/page:num'
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Howard F. Guan
+  description: Computational Neuroimaging, Machine Learning.
+  contact:
+    github:    https://github.com/freemang
+#    linkedin:  <hide>
+#    facebook:  <hide>
+#    twitter:   <none>
+#    weibo:     <none>
+
+# Navigation (2nd level links supported)
+nav:
+  首页:
+    - '/'
+    - { 分类: '/blog/categories/' }
+    - { 标签: '/blog/tags/' }
+  关于:
+    - '/about/'
+  Github Project:
+    - 'https://github.com/FreemanG/freemang.github.io'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+gems:
+  - jekyll-paginate
+
+# Puglins
+mathjax: false # whether support mathjax
+#google_analytics_token: '' # leave blank if you don't want google analytics
+disqus_short_name: 'freeman-g' # leave blank if you don't want disqus
